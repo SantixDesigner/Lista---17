@@ -37,25 +37,16 @@
             transform: translateX(0vw);
         }
     }
-    .main-index{
-        grid-template-areas: "miembros miembros miembros miembros"
-        "qs qs qs qs"
-        "lista lista lista lista "
-        "proyectos proyectos proyectos proyectos"
-        "seccion_noti seccion_noti seccion_noti seccion_noti"
-        "contac contac contac contac"
-        "proyectosZ proyectosZ proyectosZ proyectosZ"
-        "news news news news";
-        ;
-    }
 }
 @media(max-width:400px){
     .header{
         h1{
             display: none;
         }
-        img{
-            margin: 0;
+        a{
+            img{
+                margin: 0;
+            }
         }
     }
 }
