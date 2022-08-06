@@ -204,7 +204,7 @@ body {
     background: -webkit-linear-gradient(45deg, #845EC2 0%, #009EFA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .header img {
+  .header a img {
     margin-left: 50px;
     width: 50px;
     border-radius: 49px;
