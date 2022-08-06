@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+$color1:#845EC2;
+$color2:#009EFA;
+$color3:#00D2FC;
+$color4:#4FFBDF;
+$color5:rgb(164, 164, 164);
+@import "index";
+@import "header";
+@import "footer";
+@import "mediaqueries";

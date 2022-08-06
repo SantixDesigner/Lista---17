@@ -1,0 +1,61 @@
+@media(max-width:768px) {
+    .header {
+        .bars {
+            display: block;
+            margin-left: auto;
+            cursor: pointer;
+            position: absolute;
+            top:10px;
+            right: 10px;
+        }
+
+        .nav {
+            position: fixed;
+            margin: 0;
+            top: 0px;
+            left: 0px;
+            background-color: rgba($color: $color2, $alpha: 0.95);
+            height: 100%;
+            transform: translateX(-300px);
+            transition: .4s ease-in-out;
+            .ul-nav {
+                flex-direction: column;
+                margin-top: 50px;
+
+                li {
+                    margin: 10px 0;
+                    a{
+                        color: black;
+                        &:hover{
+                            color: chocolate;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-show{
+            transform: translateX(0vw);
+        }
+    }
+    .main-index{
+        grid-template-areas: "miembros miembros miembros miembros"
+        "qs qs qs qs"
+        "lista lista lista lista "
+        "proyectos proyectos proyectos proyectos"
+        "seccion_noti seccion_noti seccion_noti seccion_noti"
+        "contac contac contac contac"
+        "proyectosZ proyectosZ proyectosZ proyectosZ"
+        "news news news news";
+        ;
+    }
+}
+@media(max-width:400px){
+    .header{
+        h1{
+            display: none;
+        }
+        img{
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Ubuntu', sans-serif; }
+
+body {
+  background-color: black; }
+  body .main-index {
+    display: grid;
+    grid-template-areas: "miembros miembros miembros miembros" "qs qs qs qs" "lista lista lista lista " "proyectos proyectos proyectos proyectos" "seccion_noti seccion_noti contac contac" "proyectosZ proyectosZ proyectosZ proyectosZ" "news news news news"; }
+    body .main-index section {
+      display: flex;
+      margin: 5px 0 5px 0; }
+      body .main-index section:nth-of-type(1) {
+        grid-area: miembros;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        body .main-index section:nth-of-type(1) div {
+          background-color: rgba(0, 158, 250, 0.4);
+          padding: 10px;
+          border-radius: 40px;
+          text-align: center;
+          margin: 15px 50px;
+          width: 100%;
+          max-width: 300px;
+          font-weight: 500; }
+          body .main-index section:nth-of-type(1) div h2 {
+            width: 90%;
+            border-bottom: .1px solid black;
+            margin: 0 auto; }
+          body .main-index section:nth-of-type(1) div ol li {
+            list-style: none; }
+          body .main-index section:nth-of-type(1) div .consejeros li {
+            padding: 2vh 0px; }
+      body .main-index section:nth-of-type(2) {
+        grid-area: qs; }
+        body .main-index section:nth-of-type(2) div {
+          background-color: rgba(132, 94, 194, 0.8);
+          width: 75%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 5px; }
+          body .main-index section:nth-of-type(2) div h3 {
+            border-bottom: .2px solid black;
+            width: 50%;
+            margin: 0 auto; }
+          body .main-index section:nth-of-type(2) div p {
+            font-weight: 600; }
+      body .main-index section:nth-of-type(3) {
+        grid-area: proyectos; }
+        body .main-index section:nth-of-type(3) div {
+          background-color: rgba(0, 158, 250, 0.8);
+          text-align: center;
+          margin: 5px auto;
+          font-weight: 700;
+          padding: 5px;
+          width: 75%; }
+          body .main-index section:nth-of-type(3) div h4 {
+            border-bottom: .2px solid black;
+            width: 50%;
+            margin: 0 auto; }
+      body .main-index section:nth-of-type(4) {
+        grid-area: seccion_noti; }
+        body .main-index section:nth-of-type(4) div {
+          margin: 0px auto;
+          background-color: rgba(79, 251, 223, 0.5);
+          width: 75%;
+          padding: 5px;
+          text-align: center;
+          font-weight: 700;
+          color: white; }
+          body .main-index section:nth-of-type(4) div h4 {
+            border-bottom: .2px solid black;
+            width: 50%;
+            margin: 0 auto; }
+          body .main-index section:nth-of-type(4) div p a {
+            text-decoration: none;
+            color: burlywood; }
+      body .main-index section:nth-of-type(5) {
+        grid-area: contac; }
+        body .main-index section:nth-of-type(5) div {
+          margin: 5px auto;
+          background-color: rgba(79, 251, 223, 0.5);
+          width: 75%;
+          padding: 5px;
+          text-align: center;
+          font-weight: 700;
+          color: white; }
+          body .main-index section:nth-of-type(5) div h4 {
+            border-bottom: .2px solid black;
+            width: 50%;
+            margin: 0 auto; }
+          body .main-index section:nth-of-type(5) div p a {
+            text-decoration: none;
+            color: burlywood; }
+      body .main-index section:nth-of-type(6) {
+        grid-area: lista;
+        width: 100%; }
+        body .main-index section:nth-of-type(6) div {
+          background-color: #a4a4a4;
+          width: 75%;
+          text-align: center;
+          margin: 0 auto;
+          padding: 10px; }
+          body .main-index section:nth-of-type(6) div p {
+            margin: 5px;
+            font-size: 20px; }
+          body .main-index section:nth-of-type(6) div h4 {
+            width: 75%;
+            margin: 5px auto;
+            border-bottom: 1px solid black; }
+          body .main-index section:nth-of-type(6) div ol {
+            width: 100%;
+            margin: 5px auto;
+            font-size: 14px;
+            border-bottom: .1px solid black; }
+            body .main-index section:nth-of-type(6) div ol li {
+              font-weight: 600;
+              list-style: none; }
+      body .main-index section:nth-of-type(7) {
+        grid-area: proyectosZ;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: bold; }
+        body .main-index section:nth-of-type(7) div {
+          width: 100%;
+          margin: 5px auto; }
+          body .main-index section:nth-of-type(7) div h4 {
+            border-bottom: .1px solid black; }
+        body .main-index section:nth-of-type(7) .l1 {
+          background-color: #845EC2; }
+          body .main-index section:nth-of-type(7) .l1 ul li a {
+            text-decoration: none;
+            color: #274200; }
+        body .main-index section:nth-of-type(7) .l2 {
+          background-color: #009EFA; }
+        body .main-index section:nth-of-type(7) .l3 {
+          background-color: #00D2FC; }
+        body .main-index section:nth-of-type(7) .l4 {
+          background-color: #4FFBDF; }
+        body .main-index section:nth-of-type(7) .l5 {
+          background-color: #845EC2; }
+        body .main-index section:nth-of-type(7) .l6 {
+          background-color: #009EFA; }
+    body .main-index .sect-news {
+      grid-area: news;
+      display: flex;
+      flex-direction: column; }
+      body .main-index .sect-news .article {
+        margin: 5px auto; }
+        body .main-index .sect-news .article h4 {
+          color: white;
+          background-color: #845EC2;
+          padding: 5px 20px 5px 5px; }
+        body .main-index .sect-news .article i {
+          border-top: 10px solid white;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          position: absolute;
+          transform: translate(5px, 5px); }
+      body .main-index .sect-news .notas {
+        transition: .2s;
+        text-align: center;
+        width: 90%;
+        max-width: 500px;
+        height: 0px;
+        background-color: white;
+        overflow-y: hidden;
+        margin: 0 auto; }
+        body .main-index .sect-news .notas img {
+          width: 90%; }
+        body .main-index .sect-news .notas video {
+          width: 90%; }
+      body .main-index .sect-news .notas-show {
+        transform: translateX(0vw);
+        visibility: visible;
+        height: 100vh;
+        overflow-y: scroll; }
+
+@media (max-width: 768px) {
+  body .main-index {
+    grid-template-areas: "miembros miembros miembros miembros" "qs qs qs qs" "lista lista lista lista " "proyectos proyectos proyectos proyectos" "seccion_noti seccion_noti seccion_noti seccion_noti" "contac contac contac contac" "proyectosZ proyectosZ proyectosZ proyectosZ" "news news news news"; } }
+
+.header {
+  background-color: rgba(132, 94, 194, 0.5);
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 5px 10px;
+  color: #a4a4a4; }
+  .header h1 {
+    background: -webkit-linear-gradient(45deg, #845EC2 0%, #009EFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .header img {
+    margin-left: 50px;
+    width: 50px;
+    border-radius: 49px;
+    opacity: 0.7; }
+  .header .nav {
+    margin-top: 8px;
+    margin-left: auto; }
+    .header .nav .ul-nav {
+      display: flex; }
+      .header .nav .ul-nav li {
+        list-style: none; }
+        .header .nav .ul-nav li a {
+          text-decoration: none;
+          margin: 0 7.5px;
+          background-image: radial-gradient(currentColor, currentColor);
+          background-position: 50% 100%;
+          background-size: 0% 0%, 2.5px;
+          transition: .2s;
+          color: #a4a4a4;
+          font-size: 17px; }
+          .header .nav .ul-nav li a:hover {
+            color: green;
+            background-size: 100% 1px; }
+  .header .bars {
+    display: none; }
+
+.footer {
+  background-color: #4FFBDF;
+  text-align: center;
+  display: flex;
+  padding: 5px 0px;
+  flex-wrap: wrap; }
+  .footer h3 {
+    font-size: 100%;
+    margin: auto auto; }
+  .footer img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px; }
+
+@media (max-width: 768px) {
+  .header .bars {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .header .nav {
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 158, 250, 0.95);
+    height: 100%;
+    transform: translateX(-300px);
+    transition: .4s ease-in-out; }
+    .header .nav .ul-nav {
+      flex-direction: column;
+      margin-top: 50px; }
+      .header .nav .ul-nav li {
+        margin: 10px 0; }
+        .header .nav .ul-nav li a {
+          color: black; }
+          .header .nav .ul-nav li a:hover {
+            color: chocolate; }
+  .header .nav-show {
+    transform: translateX(0vw); }
+  .main-index {
+    grid-template-areas: "miembros miembros miembros miembros" "qs qs qs qs" "lista lista lista lista " "proyectos proyectos proyectos proyectos" "seccion_noti seccion_noti seccion_noti seccion_noti" "contac contac contac contac" "proyectosZ proyectosZ proyectosZ proyectosZ" "news news news news"; } }
+
+@media (max-width: 400px) {
+  .header h1 {
+    display: none; }
+  .header img {
+    margin: 0; } }

@@ -1,0 +1,259 @@
+body{
+    background-color: black;
+    .main-index{
+        display: grid;
+        grid-template-areas: "miembros miembros miembros miembros"
+        "qs qs qs qs"
+        "lista lista lista lista "
+        "proyectos proyectos proyectos proyectos"
+        "seccion_noti seccion_noti contac contac"
+        "proyectosZ proyectosZ proyectosZ proyectosZ"
+        "news news news news";
+        section{
+            display: flex;
+            margin: 5px 0 5px 0;
+            &:nth-of-type(1){
+                grid-area: miembros;
+                color:white;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                div{
+                    background-color: rgba($color: $color2, $alpha: 0.4);
+                    padding: 10px;
+                    border-radius: 40px;
+                    text-align: center;
+                    margin: 15px 50px;
+                    width:100%;
+                    max-width: 300px;
+                    font-weight: 500;
+                    h2{
+                        width: 90%;
+                        border-bottom: .1px solid black;
+                        margin: 0 auto;
+                    }
+                    ol{
+                        li{
+                            list-style:none;
+                        }
+                    }
+                    .consejeros{
+                        li{
+                            padding:2vh 0px;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(2){
+                grid-area: qs;
+                div{
+                    background-color: rgba($color: $color1, $alpha: 0.8);
+                    width: 75%;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 5px;
+                    h3{
+                        border-bottom: .2px solid black;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                    p{
+                        font-weight: 600;
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                grid-area: proyectos;
+                div{
+                    background-color: rgba($color: $color2, $alpha: 0.8);
+                    text-align: center;
+                    margin: 5px auto;
+                    font-weight: 700;
+                    padding: 5px;
+                    width: 75%;
+                    h4{
+                        border-bottom: .2px solid black;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            &:nth-of-type(4){
+                grid-area: seccion_noti;
+                div{
+                    margin: 0px auto;
+                    background-color: rgba($color: $color4, $alpha: 0.5);
+                    width: 75%;
+                    padding: 5px;
+                    text-align: center;
+                    font-weight: 700;
+                    color: white;
+                    h4{
+                        border-bottom: .2px solid black;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                    p{
+                        a{
+                            text-decoration: none;
+                            color:burlywood;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(5){
+                grid-area: contac;
+                div{
+                    margin: 5px auto;
+                    background-color: rgba($color: $color4, $alpha: 0.5);
+                    width: 75%;
+                    padding: 5px;
+                    text-align: center;
+                    font-weight: 700;
+                    color: white;
+                    h4{
+                        border-bottom: .2px solid black;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                    p{
+                        a{
+                            text-decoration: none;
+                            color:burlywood;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(6){
+                grid-area: lista;
+                width: 100%;
+                div{
+                    background-color: $color5;
+                    width:75%;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 10px;
+                    p{
+                        margin: 5px;
+                        font-size: 20px;
+                    }
+                    h4{
+                        width: 75%;
+                        margin: 5px auto;
+                        border-bottom: 1px solid black;
+                    }
+                    ol{
+                        width: 100%;
+                        margin: 5px auto;
+                        font-size: 14px;
+                        border-bottom: .1px solid black;
+                        li{
+                            font-weight: 600;
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(7){
+                grid-area: proyectosZ;
+                flex-direction: column;
+                text-align: center;
+                padding: 5px;
+                width: 80%;
+                margin: 0 auto;
+                font-weight: bold;
+                div{
+                    width: 100%;
+                    margin: 5px auto;
+                    h4{
+                        border-bottom: .1px solid black;
+                    }
+                }
+                .l1{
+                    background-color: $color1;
+                    ul{
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: rgb(39, 66, 0);
+                            }
+                        }
+                    }
+                }
+                .l2{
+                    background-color: $color2;
+                }
+                .l3{
+                    background-color: $color3;
+                }
+                .l4{
+                    background-color: $color4;
+                }
+                .l5{
+                    background-color: $color1;
+                }
+                .l6{
+                    background-color: $color2;
+                }
+                
+            }
+        }
+        .sect-news{
+            grid-area: news;
+            display: flex;
+            flex-direction:column;
+            .article{
+                margin: 5px auto;
+                h4{
+                    color: white;
+                    background-color: $color1;
+                    padding: 5px 20px 5px 5px;
+                }
+                i{ 
+                    border-top: 10px solid white;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    position: absolute;
+                    transform: translate(5px, 5px);
+                }
+            }
+            .notas{
+                transition: .2s;
+                text-align: center;
+                width: 90%;
+                max-width: 500px;
+                height: 0px;
+                background-color: white;
+                overflow-y: hidden;
+                margin: 0 auto;
+                img{
+                    width: 90%;
+                }
+                video{
+                    width: 90%;
+                }
+            }
+            .notas-show{
+                transform: translateX(0vw);
+                visibility: visible;
+                height: 100vh;
+                overflow-y: scroll;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    body{
+        .main-index{
+            grid-template-areas: "miembros miembros miembros miembros"
+            "qs qs qs qs"
+            "lista lista lista lista "
+            "proyectos proyectos proyectos proyectos"
+            "seccion_noti seccion_noti seccion_noti seccion_noti"
+            "contac contac contac contac"
+            "proyectosZ proyectosZ proyectosZ proyectosZ"
+            "news news news news";
+            ;
+        }
+    }
+}
