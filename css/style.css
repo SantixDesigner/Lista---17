@@ -166,7 +166,8 @@ body {
     body .main-index .sect-news {
       grid-area: news;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      cursor: pointer; }
       body .main-index .sect-news .article {
         margin: 5px auto; }
         body .main-index .sect-news .article h4 {
@@ -187,8 +188,7 @@ body {
         height: 0px;
         background-color: white;
         overflow-y: hidden;
-        margin: 0 auto;
-        cursor: pointer; }
+        margin: 0 auto; }
         body .main-index .sect-news .notas img {
           width: 90%; }
         body .main-index .sect-news .notas video {

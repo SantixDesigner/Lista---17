@@ -218,6 +218,7 @@ body{
             grid-area: news;
             display: flex;
             flex-direction:column;
+            cursor: pointer;
             .article{
                 margin: 5px auto;
                 h4{
@@ -242,7 +243,6 @@ body{
                 background-color: white;
                 overflow-y: hidden;
                 margin: 0 auto;
-                cursor: pointer;
                 img{
                     width: 90%;
                 }
