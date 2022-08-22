@@ -234,7 +234,7 @@ body{
                 }
             }
             .notas{
-                transition: .2s;
+                transition: .5s;
                 text-align: center;
                 width: 90%;
                 max-width: 500px;
@@ -242,6 +242,7 @@ body{
                 background-color: white;
                 overflow-y: hidden;
                 margin: 0 auto;
+                cursor: pointer;
                 img{
                     width: 90%;
                 }
