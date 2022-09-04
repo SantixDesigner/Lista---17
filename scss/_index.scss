@@ -119,11 +119,9 @@ body{
                         width: 50%;
                         margin: 0 auto;
                     }
-                    p{
-                        a{
-                            text-decoration: none;
-                            color:burlywood;
-                        }
+                    a{
+                        text-decoration: none;
+                        color:burlywood;
                     }
                 }
             }
@@ -259,6 +257,7 @@ body{
         }
     }
 }
+
 @media(max-width:768px){
     body{
         .main-index{

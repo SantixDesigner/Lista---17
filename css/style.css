@@ -99,7 +99,7 @@ body {
             border-bottom: .2px solid black;
             width: 50%;
             margin: 0 auto; }
-          body .main-index section:nth-of-type(5) div p a {
+          body .main-index section:nth-of-type(5) div a {
             text-decoration: none;
             color: burlywood; }
       body .main-index section:nth-of-type(6) {
